@@ -41,6 +41,19 @@ public class PilhaInt {
         return dados[topo];
     }
 
+    public void top() {
+        topo--;
+        System.out.println(dados[topo]);
+        topo++;
+    }
+
+    public void esvaziar() {
+        for(int i = topo; i >= 0; i--){
+            System.out.println("Valor retirado: " + dados[i]);
+        }
+        topo = 0;
+    }
+
 
 
 }

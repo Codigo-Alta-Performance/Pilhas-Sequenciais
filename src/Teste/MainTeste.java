@@ -6,21 +6,26 @@ public class MainTeste {
     public static void main(String[] args) {
         PilhaInt pilha = new PilhaInt();
         pilha.isEmpty();
-        pilha.push(10);
-        pilha.push(12);
-        pilha.push(22);
-        pilha.push(33);
-        pilha.push(44);
-        pilha.push(55);
-        pilha.push(66);
-
+        pilha.init();
+        pilha.push(1);
+        pilha.push(2);
+        pilha.push(3);
+        pilha.push(4);
+        System.out.print("Valor no topo da pilha: ");
+        pilha.top();
         if(pilha.isEmpty()) {
             System.out.println("A pilha está vazia");
         } else {
             int valor = pilha.pop();
             System.out.println("Valor retirado da pilha: " + valor);
         }
+        System.out.print("Valor no topo da pilha: ");
+        pilha.top();
 
+        pilha.esvaziar();
+
+        pilha.push(7);
+        pilha.top();
 
     }
 }
