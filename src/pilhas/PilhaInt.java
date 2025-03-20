@@ -1,7 +1,7 @@
 package pilhas;
 
 public class PilhaInt {
-    final int N = 6;
+    public final int N = 8;
     int[] dados = new int[N];
     int topo;
 
@@ -41,19 +41,22 @@ public class PilhaInt {
         return dados[topo];
     }
 
-    public void top() {
-        topo--;
-        System.out.println(dados[topo]);
-        topo++;
+    public int top() {
+        return dados[topo - 1];
     }
 
     public void esvaziar() {
-        for(int i = topo; i >= 0; i--){
+        /*
+        for(int i = topo - 1; i >= 0; i--){
             System.out.println("Valor retirado: " + dados[i]);
         }
         topo = 0;
+        */
+        while(!isEmpty()) {
+            //System.out.println("Valor retirado: " + pop());
+            System.out.print(pop() + "\t");
+        }
+
     }
-
-
 
 }
