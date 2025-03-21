@@ -36,14 +36,12 @@ public class Palindromo {
         */
         i = 0;
         int v;
-        boolean check = false;
-        while(!pilha.isEmpty()) {
+        boolean check = true;
+        while(!pilha.isEmpty() && check) {
             v = pilha.pop();
             if (v != vetor[i]) {
                 System.out.println("O valor não é um palíndromo!");
-                break;
-            } else {
-                check = true;
+                check = false;
             }
             i++;
         }
