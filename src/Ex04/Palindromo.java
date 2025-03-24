@@ -12,6 +12,7 @@ public class Palindromo {
         pilha.init();
         int digito;
         int i = 0;
+        //Inserção de valores
         do {
             System.out.println("Insira um valor: ");
             digito = sc.nextInt();
@@ -22,7 +23,6 @@ public class Palindromo {
             }
 
         } while (digito > 0 );
-        //pilha.pop();
 
         /*
         while(digito > 0) {
@@ -34,6 +34,8 @@ public class Palindromo {
             i++;
         }
         */
+
+        //Verificação se é um palíndromo
         i = 0;
         int v;
         boolean check = true;

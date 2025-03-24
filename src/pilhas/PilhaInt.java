@@ -41,6 +41,7 @@ public class PilhaInt {
         return dados[topo];
     }
 
+    //O top é a mesma coisa do pop, o valor precisa ser armazenado em uma variável
     public int top() {
         return dados[topo - 1];
     }
